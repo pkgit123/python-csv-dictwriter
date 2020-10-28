@@ -6,8 +6,11 @@ This is useful when ingesting Rest API into Redshift table.
 Assumes this code is run from AWS Lambda, e.g. /tmp/ folder used for CSV file output path.
 '''
 
-# create list of expected 
-ls_rs_api_col = ['items', 'in', 'both', 'dict', 'and', 'redshift_cols']
+# raw list of dictionaries
+content_list = ['list_of', 'dict_from_api']
+
+# create list of expected keys/cols that match
+ls_rs_api_col = ['keys_cols', 'in', 'both', 'dict', 'and', 'redshift_cols']
 
 # create copy of list of API keys
 ls_api_copy = ls_api_keys.copy()
